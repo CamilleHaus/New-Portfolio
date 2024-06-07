@@ -1,7 +1,7 @@
 const aboutMe = () => {
   return (
     <div className="w-full bg-tertiary text-black">
-      <div className="w-[70%] mx-auto max-w-[1450px] flex gap-20 py-10 max-md:flex-col">
+      <div className="w-[70%] mx-auto max-w-[1450px] flex gap-20 py-14 max-md:flex-col">
         <div className="w-[40%]">
           <h2 className="text-5xl font-bold">Sobre mim</h2>
           <p className="mt-10">Botao do Linkedin</p>
