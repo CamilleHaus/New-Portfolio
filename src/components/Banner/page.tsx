@@ -3,7 +3,7 @@ import Button from "../shared/Button";
 
 const banner = () => {
   return (
-    <section className="w-full bg-primary text-white">
+    <section className="w-full bg-tertiary">
       <div className="w-[70%] mx-auto max-w-[1450px] flex gap-20">
         <div className="mt-10 flex flex-col gap-10 py-4 items-start">
           <h1 className="text-6xl font-bold">Bem-vindo ao meu Portfólio!</h1>
@@ -14,7 +14,7 @@ const banner = () => {
           <Button />
         </div>
         <img
-          src={"/assets/foto.png"}
+          src={"/assets/perfil.png"}
           alt="Image de Perfil"
           width={450}
           height={450}

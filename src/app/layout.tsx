@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/shared/NavBar";
+import { ProjectProvider } from "@/providers/ProjectContext";
+import Footer from "@/components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,9 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <NavBar />
-        {children}</body>
+      <ProjectProvider>
+        <body className={roboto.className}>
+          <NavBar />
+          {children}
+          <Footer />
+        </body>
+      </ProjectProvider>
     </html>
   );
 }

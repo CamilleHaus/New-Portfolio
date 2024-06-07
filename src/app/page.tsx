@@ -2,6 +2,7 @@ import Banner from "@/components/Banner/page";
 import AboutMe from "@/components/AboutMe/page";
 import Projects from "@/components/Projects/page";
 import Tecnologies from "@/components/Tecnologies/page";
+import Form from "@/components/Form/page";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <AboutMe />
       <Tecnologies />
       <Projects />
+      <Form />
     </>
   );
 }
