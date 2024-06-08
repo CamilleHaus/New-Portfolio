@@ -25,7 +25,7 @@ const Tecnologies = () => {
 
   return (
     <div className="w-full bg-tertiary py-10">
-      <div className="w-[70%] mx-auto max-w-[1450px] flex flex-col">
+      <div className="w-[70%] mx-auto max-w-[1450px] flex flex-col pt-10">
         <h4 className="text-3xl font-bold mb-8 uppercase text-primary border-b border-primary py-4">
           Meus conhecimentos
         </h4>

@@ -18,9 +18,12 @@ const config: Config = {
         custom: '0 4px 6px -1px rgba(57, 36, 103, 0.5), 0 2px 4px -1px rgba(57, 36, 103, 0.05)'
       },
       backgroundImage: {
-        'projects': "url('/assets/code1.png')",
+        'projects': "url('/assets/14.png')",
         'dots': "url('/assets/dots.png')",
         'bg': "url('/assets/bg.png')",
+        'shape': "url('/assets/shape.png')",
+        'wave': "url('/assets/8.png')",
+        'form': "url('/assets/13.png')",
       },
     },
   },

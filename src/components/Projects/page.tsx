@@ -9,11 +9,11 @@ const Projects: React.FC = () => {
   const { isOpen, selectedProject, openProjectModal } = useProject();
 
   return (
-    <div className="w-full bg-tertiary max-md:bg-none ">
+    <div className="w-full bg-projects bg-cover max-md:bg-none ">
       <div className="w-[70%] mx-auto max-w-[1450px] flex flex-col">
         <h3 className="text-3xl py-4 mt-16 mb-8 font-bold uppercase text-primary border-b border-primary">Meus projetos</h3>
         <div>
-          <ul className="grid grid-cols-2 gap-6 mb-24 max-md:grid-cols-1">
+          <ul className="grid grid-cols-2 gap-6 mb-24 max-md:grid-cols-1 pb-16">
             {projects.map((project) => (
               <li
                 key={project.id}
@@ -22,9 +22,9 @@ const Projects: React.FC = () => {
                 <Image
                   src={project.image}
                   alt="Image do projeto"
-                  className="rounded-t-lg px-8 pt-12 pb-6"
+                  className="rounded-t-lg px-8 pt-12 pb-4"
                 />
-                <div className="flex justify-between text-white uppercase px-8 pb-6 font-bold">
+                <div className="flex justify-between text-white uppercase px-8 pb-4 font-bold">
                   <h6 className="text-lg">{project.title}</h6>
                   <button onClick={() => openProjectModal(project)}>
                     Ver mais
