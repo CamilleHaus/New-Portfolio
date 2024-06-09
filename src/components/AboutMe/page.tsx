@@ -2,20 +2,20 @@ import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 const aboutMe = () => {
   return (
-    <div className="w-full bg-primary bg-opacity-80 text-black">
-      <div className="w-[70%] mx-auto max-w-[1450px] flex gap-20 py-14 max-md:flex-col text-tertiary">
-        <div className="w-[25%] border-l border-tertiary pl-4">
+    <div className="w-full bg-primary bg-opacity-80 text-black" id="aboutMeSection">
+      <div className="w-[70%] mx-auto max-w-[1450px] flex gap-20 py-14 max-md:flex-col text-tertiary max-sm:w-[85%] max-sm:gap-10">
+        <div className="w-[25%] border-l border-tertiary pl-4 max-sm:w-[85%]">
           <h2 className="text-4xl uppercase font-bold">Sobre mim</h2>
           <div className="flex gap-2 text-3xl mt-4">
-            <p>
+            <a href="https://www.linkedin.com/in/camillehaus/" target="_blank">
               <FaLinkedin />
-            </p>
-            <p>
+            </a>
+            <a href="https://github.com/CamilleHaus" target="_blank">
               <FaGithubSquare />
-            </p>
+            </a>
           </div>
         </div>
-        <p className="w-[75%] text-justify leading-8">
+        <p className="w-[75%] text-justify leading-8 max-sm:w-[100%] max-sm:text-xl">
           Depois de 3 anos na indústria de Recrutamento de TI, onde tive meu
           primeiro contato com programação, resolvi fazer a transição de
           carreira. Desde então, comecei meu curso de FullStack na Kenzie
@@ -31,3 +31,4 @@ const aboutMe = () => {
 };
 
 export default aboutMe;
+

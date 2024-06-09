@@ -19,7 +19,7 @@ const config: Config = {
       },
       backgroundImage: {
         'projects': "url('/assets/14.png')",
-        'dots': "url('/assets/dots.png')",
+        'dots': "url('/assets/15.png')",
         'bg': "url('/assets/bg.png')",
         'shape': "url('/assets/shape.png')",
         'wave': "url('/assets/8.png')",
