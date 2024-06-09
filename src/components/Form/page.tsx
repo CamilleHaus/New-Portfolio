@@ -40,7 +40,7 @@ const Form = () => {
         alert("Failed to send email" + result.message);
       }
     } catch (error) {
-      alert("Error: " + error.message);
+      // alert("Error: " + error.message);
     }
   };
 
