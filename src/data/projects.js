@@ -7,8 +7,9 @@ export const projects = [
     image: TheBooks,
     title: "The Books",
     responsive: false,
+    subtitle: "Projeto de Filtragem de Itens",
     description:
-      "Projeto focado no aprendizado da lógica de filtragem de itens de forma individual e simultânea. Utilizando do AXIOS para manipulação de rotas de API's e CONTEXTO para o gerenciamento de estados e centralização da lógica. Projeto realizado em REACT, com reutilização de componentes e estilizado com SASS.",
+      "Este projeto foca no aprendizado da lógica de filtragem de itens de forma individual e simultânea. Utiliza AXIOS para manipulação de rotas de APIs e CONTEXTO para gerenciamento de estados e centralização da lógica. Desenvolvido em REACT, com reutilização de componentes e estilização com SASS.",
     github: "https://github.com/CamilleHaus/the_books",
     vercel: "",
   },
@@ -17,8 +18,9 @@ export const projects = [
     image: Kenziehub,
     title: "Kenziehub",
     responsive: true,
+    subtitle: "Projeto de Registro e Login com Autenticação",
     description:
-      "Projeto focado no aprendizado da páginas de registro e login com autenticação e validação de campos utilizando SCHEMA e ZOD. Utilizando do AXIOS para renderização de API's e todos os métodos HTTP (GET, POST, PUT/PATCH e DELETE). Também foi feita proteção de rotas e utilizado CONTEXTO para melhor organização do código. Projeto realizado em REACT, componetizado e estilizado em SASS.",
+      "Este projeto tem como foco o aprendizado das páginas de registro e login, com autenticação e validação de campos utilizando Schema e ZOD. Utiliza AXIOS para renderização de APIs, incorporando todos os métodos HTTP (GET, POST, PUT/PATCH e DELETE). Além disso, implementa a proteção de rotas e utiliza CONTEXTO para melhor organização do código. Desenvolvido em REACT, com componentização e estilização em SASS.",
     github:
       "https://github.com/Kenzie-Academy-Brasil-Developers/m3_sprint4_Kenzie_hub_camille_haus",
     vercel: "",

@@ -25,14 +25,14 @@ const Tecnologies = () => {
 
   return (
     <div className="w-full bg-tertiary py-10">
-      <div className="w-[70%] mx-auto max-w-[1450px] flex flex-col pt-10 max-sm:w-[85%]">
+      <div className="w-[70%] mx-auto max-w-[1450px] flex flex-col pt-10 max-sm:w-[80%] max-md:w-[85%]">
         <h4 className="text-3xl font-bold mb-8 uppercase text-primary border-b border-primary py-4">
           Meus conhecimentos
         </h4>
-        <ul className="grid gap-8 grid-cols-5 max-sm:grid-cols-2 max-sm:overflow-hidden max-sm:grid-rows-1">
+        <ul className="grid gap-8 grid-cols-5 max-md:flex max-md:overflow-x-auto max-md:flex-nowrap">
           {icons.map((icon, index) => (
-            <div className="bg-primary bg-opacity-80 shadow-sm shadow-primary text-white gap-2 flex flex-col items-center">
-              <li key={index} className="p-4 border-2 mt-2 max-md:p-0">
+            <div className="bg-primary bg-opacity-80 shadow-sm shadow-primary text-white gap-2 flex flex-col items-center p-2">
+              <li key={index} className="p-4 border-2 mt-2 max-md:p-2">
                 <icon.Icon className="text-9xl" />
               </li>
               <p className="w-[100%] text-center pb-2 font-bold uppercase">{icon.name}</p>

@@ -2,9 +2,15 @@ import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 const aboutMe = () => {
   return (
-    <div className="w-full bg-primary bg-opacity-80 text-black" id="aboutMeSection">
-      <div className="w-[70%] mx-auto max-w-[1450px] flex gap-20 py-14 max-md:flex-col text-tertiary max-sm:w-[85%] max-sm:gap-10">
-        <div className="w-[25%] border-l border-tertiary pl-4 max-sm:w-[85%]">
+    <div
+      className="w-full bg-primary bg-opacity-80 text-black"
+      id="aboutMeSection"
+    >
+      <div
+        className="w-[70%] mx-auto max-w-[1450px] flex gap-20 py-14 max-md:flex-col text-tertiary 
+      max-sm:w-[80%] max-sm:gap-10 max-md:w-[85%] max-md:gap-10"
+      >
+        <div className="w-[25%] border-l border-tertiary pl-4 max-sm:w-[85%] max-md:w-[100%]">
           <h2 className="text-4xl uppercase font-bold">Sobre mim</h2>
           <div className="flex gap-2 text-3xl mt-4">
             <a href="https://www.linkedin.com/in/camillehaus/" target="_blank">
@@ -15,15 +21,16 @@ const aboutMe = () => {
             </a>
           </div>
         </div>
-        <p className="w-[75%] text-justify leading-8 max-sm:w-[100%] max-sm:text-xl">
-          Depois de 3 anos na indústria de Recrutamento de TI, onde tive meu
-          primeiro contato com programação, resolvi fazer a transição de
-          carreira. Desde então, comecei meu curso de FullStack na Kenzie
-          Academy e venho me apaixonando pela área todos os dias.
-          Tive a chance de participar por alguns meses de um projeto para um
-          serviço de venda de Canvas e isso só me consolidou que eu fiz a escolha
-          certa. Agora, procuro uma oportunidade onde poderei evoluir ainda mais
-          e aplicar tudo que aprendi até agora.
+        <p className="w-[75%] text-justify leading-8 max-sm:w-[100%] max-md:text-lg max-md:w-[100%]">
+          Após três anos de experiência na indústria de Recrutamento de TI, onde
+          tive meu primeiro contato com programação, decidi fazer a transição de
+          carreira. Desde então, iniciei meu curso de FullStack na Kenzie
+          Academy e desenvolvi uma verdadeira paixão pela área. Durante esse
+          período, tive a oportunidade de participar de um projeto voltado para
+          um serviço de venda de Canvas, o que reforçou minha convicção de que
+          escolhi o caminho certo. Agora, estou em busca de uma oportunidade que
+          me permita continuar evoluindo e aplicar todo o conhecimento adquirido
+          até o momento.
         </p>
       </div>
     </div>
@@ -31,4 +38,3 @@ const aboutMe = () => {
 };
 
 export default aboutMe;
-

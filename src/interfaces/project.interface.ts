@@ -5,6 +5,7 @@ export interface IProject {
     image: StaticImageData;
     title: string;
     responsive: boolean;
+    subtitle: string;
     description: string;
     github: string;
 };

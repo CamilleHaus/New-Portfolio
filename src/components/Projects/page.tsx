@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className="w-full bg-projects bg-cover" id="projectSection">
-      <div className="w-[70%] mx-auto max-w-[1450px] flex flex-col max-sm:w-[85%]">
+      <div className="w-[70%] mx-auto max-w-[1450px] flex flex-col max-sm:w-[85%] max-md:w-[85%]">
         <h3 className="text-3xl py-4 mt-16 mb-8 font-bold uppercase text-primary border-b border-primary">Meus projetos</h3>
         <div>
           <ul className="grid grid-cols-2 gap-6 mb-24 max-md:grid-cols-1 pb-16">

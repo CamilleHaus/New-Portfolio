@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+require('dotenv').config();
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -23,21 +24,21 @@ export default async function handler(req, res) {
    const mailOptions = {
       from: process.env.SMTP_USER, // remetente
       to: process.env.SMTP_RECEIVER, // destinatário
-      subject: `New message from ${name}`, // assunto
-      text: `You have received a new message from your website contact form.
+      subject: `Nova mensagem de ${name} - Portfolio`, // assunto
+      text: `Você recebeu uma mensagem do seu formulário de contato!
 
-        Name: ${name}
+        Nome: ${name}
         Email: ${email}
-        Message: ${message}
+        Mensagem: ${message}
       `,
       html: `
-        <p>You have received a new message from your website contact form.</p>
-        <h3>Contact Details</h3>
+        <p>Você recebeu uma mensagem do seu formulário de contato</p>
+        <h3>Informações de contato</h3>
         <ul>
-          <li>Name: ${name}</li>
+          <li>Nome: ${name}</li>
           <li>Email: ${email}</li>
         </ul>
-        <h3>Message</h3>
+        <h3>Mensagem</h3>
         <p>${message}</p>
       `,
     };
