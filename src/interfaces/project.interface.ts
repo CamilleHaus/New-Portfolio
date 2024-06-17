@@ -8,6 +8,7 @@ export interface IProject {
     subtitle: string;
     description: string;
     github: string;
+    vercel: string;
 };
 
 export interface IProjectCard {

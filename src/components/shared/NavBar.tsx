@@ -6,8 +6,8 @@ const navBar = () => {
 
   return (
     <nav className="w-full bg-tertiary py-4">
-      <div className="w-[70%] mx-auto max-w-[1450px] flex gap-20 justify-end max-sm:w-[85%] max-md:w-[85%] max-md:justify-center">
-        <ul className="flex gap-10 items-center uppercase font-bold text-primary text-lg">
+      <div className="w-[70%] mx-auto max-w-[1450px] flex gap-20 justify-end max-sm:w-[85%] max-md:w-[85%] max-md:justify-center max-2md:w-[85%]">
+        <ul className="flex gap-10 items-center uppercase font-bold text-primary text-lg max-sm:text-sm">
           <li className="hover:border-b hover:border-primary">
             <a href="#aboutMeSection">Sobre mim</a>
           </li>

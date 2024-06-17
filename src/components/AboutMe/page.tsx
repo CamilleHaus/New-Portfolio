@@ -8,7 +8,7 @@ const aboutMe = () => {
     >
       <div
         className="w-[70%] mx-auto max-w-[1450px] flex gap-20 py-14 max-md:flex-col text-tertiary 
-      max-sm:w-[80%] max-sm:gap-10 max-md:w-[85%] max-md:gap-10"
+      max-sm:w-[80%] max-sm:gap-10 max-md:w-[85%] max-md:gap-10 max-2md:w-[80%]"
       >
         <div className="w-[25%] border-l border-tertiary pl-4 max-sm:w-[85%] max-md:w-[100%]">
           <h2 className="text-4xl uppercase font-bold">Sobre mim</h2>
@@ -21,7 +21,7 @@ const aboutMe = () => {
             </a>
           </div>
         </div>
-        <p className="w-[75%] text-justify leading-8 max-sm:w-[100%] max-md:text-lg max-md:w-[100%]">
+        <p className="w-[75%] text-justify leading-8 max-sm:w-[100%] max-md:text-lg max-md:w-[100%] max-sm:text-base">
           Após três anos de experiência na indústria de Recrutamento de TI, onde
           tive meu primeiro contato com programação, decidi fazer a transição de
           carreira. Desde então, iniciei meu curso de FullStack na Kenzie

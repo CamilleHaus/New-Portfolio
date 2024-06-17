@@ -18,13 +18,16 @@ const config: Config = {
         custom: '0 4px 6px -1px rgba(57, 36, 103, 0.5), 0 2px 4px -1px rgba(57, 36, 103, 0.05)'
       },
       backgroundImage: {
-        'projects': "url('/assets/14.png')",
-        'dots': "url('/assets/15.png')",
-        'bg': "url('/assets/bg.png')",
-        'shape': "url('/assets/shape.png')",
-        'wave': "url('/assets/8.png')",
-        'form': "url('/assets/13.png')",
+        'projects': "url('/14.png')",
+        'dots': "url('/15.png')",
+        'bg': "url('/bg.png')",
+        'shape': "url('/shape.png')",
+        'wave': "url('/8.png')",
+        'form': "url('/13.png')",
       },
+      screens: {
+        '2md': '1000px'
+      }
     },
   },
   plugins: [],
