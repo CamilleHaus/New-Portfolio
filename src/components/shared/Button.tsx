@@ -8,7 +8,7 @@ const button = () => {
       </p>
       <div className="flex gap-2 max-sm:items-center">
         <a
-          href="/currículoPortugues.pdf"
+          href="/assets/currículoPortugues.pdf"
           target="_blank"
           className="hover:border-b hover:border-primary"
         >
@@ -16,7 +16,7 @@ const button = () => {
         </a>
         <span>/</span>
         <a
-          href="/currículoIngles.pdf"
+          href="/assets/currículoIngles.pdf"
           target="_blank"
           className="hover:border-b hover:border-primary"
         >
