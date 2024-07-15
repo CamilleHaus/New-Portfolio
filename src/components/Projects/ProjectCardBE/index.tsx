@@ -1,8 +1,8 @@
-import { IProjectCard } from "@/interfaces/project.interface";
+import { IProjectCardBE } from "@/interfaces/project.interface";
 import { useProject } from "@/providers/ProjectContext";
 
-const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
-  const { closeProjectModal } = useProject();
+const ProjectCardBE: React.FC<IProjectCardBE> = ({ backend }) => {
+  const { closeBEProjectModal } = useProject();
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
@@ -11,29 +11,24 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
           <div className="flex flex-col gap-3">
             <div className="flex justify-between border-b border-primary border-opacity-20">
               <h4 className="uppercase font-bold text-2xl text-primary">
-                {project.title}
+                {backend.title}
               </h4>
-              <button onClick={closeProjectModal} className="mb-4 text-primary">
+              <button
+                onClick={closeBEProjectModal}
+                className="mb-4 text-primary"
+              >
                 X
               </button>
             </div>
-            <span className="uppercase">
-              {project.responsive ? "Responsivo" : "Não responsivo"}
-            </span>
-            <p className="font-bold">{project.subtitle}</p>
+            <p className="font-bold">{backend.techs}</p>
             <p className="text-justify leading-7 max-md:pb-6 max-md:text-lg">
-              {project.description}
+              {backend.description}
             </p>
           </div>
           <div className="flex justify-between max-sm:flex-col max-sm:gap-2">
-            <a className="text-primary" href={project.github} target="_blank">
+            <a className="text-primary" href={backend.github} target="_blank">
               Acesse o Github do Projeto
             </a>
-            {project.vercel ? (
-              <a className="text-primary" href={project.vercel} target="_blank">
-                Teste aqui 🖥️
-              </a>
-            ) : null}
           </div>
         </div>
       </div>
@@ -41,4 +36,4 @@ const ProjectCard: React.FC<IProjectCard> = ({ project }) => {
   );
 };
 
-export default ProjectCard;
+export default ProjectCardBE;

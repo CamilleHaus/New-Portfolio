@@ -1,13 +1,16 @@
 "use client";
 
-import { IProject } from "@/interfaces/project.interface";
+import { IProject, IProjectBE } from "@/interfaces/project.interface";
 import { ReactNode, createContext, useContext, useState } from "react";
 
 interface ProjectContextProps {
   isOpen: boolean;
   selectedProject: IProject | null;
+  selectedBackendProject: IProjectBE | null;
   openProjectModal: (project: IProject) => void;
   closeProjectModal: () => void;
+  openBEProjectModal: (backend: IProjectBE) => void;
+  closeBEProjectModal: () => void;
 }
 
 export const ProjectContext = createContext<ProjectContextProps | undefined>(
@@ -19,6 +22,7 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
+  const [selectedBackendProject, setSelectedBackendProject ] = useState<IProjectBE | null>(null);
 
   const openProjectModal = (project: IProject) => {
     setSelectedProject(project);
@@ -30,9 +34,21 @@ export const ProjectProvider: React.FC<{ children: ReactNode }> = ({
     setSelectedProject(null);
   };
 
+  const openBEProjectModal = (project: IProjectBE) => {
+    setSelectedBackendProject(project);
+    setIsOpen(true);
+  };
+
+  const closeBEProjectModal = () => {
+    setIsOpen(false);
+    setSelectedBackendProject(null);
+  };
+
+
+
   return (
     <ProjectContext.Provider
-      value={{ isOpen, selectedProject, openProjectModal, closeProjectModal }}
+      value={{ isOpen, selectedProject, openProjectModal, closeProjectModal, selectedBackendProject, openBEProjectModal, closeBEProjectModal }}
     >
       {children}
     </ProjectContext.Provider>

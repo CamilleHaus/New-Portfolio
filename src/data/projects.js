@@ -1,22 +1,34 @@
 import TheBooks from "../../public/the-books.png";
 import Kenziehub from "../../public/Kenziehub.png";
-import ExploreX from "../../public/explore-X.png"
+import ExploreX from "../../public/explore-X.png";
+import ECommerce from "../../public/e-commerce.png";
 
 export const projects = [
   {
     id: 0,
+    image: ECommerce,
+    title: "E-Commerce",
+    responsive: true,
+    subtitle: "Projeto de E-commerce de Camisas",
+    description:
+      "Projeto de E-commerce, utilizando tecnologias como Next, Tailwind, Auth.js e Stripe. Nele, foquei em aprender um pouco mais sobre o universo de vendas, como a estrutura desse tipo de aplicação funciona e como integramos os produtos e pagamentos. Mais informações no ReadMe do projeto, no link do Github",
+    github: "https://github.com/CamilleHaus/e-commerce-project",
+    vercel: null,
+  },
+  {
+    id: 1,
     image: ExploreX,
     title: "ExploreX",
     responsive: true,
     subtitle: "Blog Interativo com Autenticação e Filtragem",
     description:
       "Neste projeto, foquei em aprimorar meu conhecimento em Tailwind e explorar novas ferramentas, como o Auth.js (anteriormente NextAuth). Durante o desenvolvimento, realizei a migração da versão 4 para a versão 5 do Auth.js, após a conclusão inicial do projeto. Este projeto é um blog onde os usuários podem criar suas próprias postagens, adicionar imagens, descrições e categorias. Além disso, é possível visualizar as postagens, o autor e a data de criação, bem como filtrar postagens com base na categoria. Utilizei o Prisma como ORM e o MongoDB como banco de dados principal. Para renderizar o carrossel de projetos, utilizei a biblioteca React Slick. Planejo futuras melhorias, incluindo a integração do NodeMailer para tornar o formulário de contato funcional, a implementação do React Hot Toast para o sistema de notificações e aprimoramentos na estilização.",
-    github:
-      "https://github.com/CamilleHaus/ExploreX",
-    vercel: "https://explore-nextjs-camillehaus-camillehaus-projects.vercel.app/",
+    github: "https://github.com/CamilleHaus/ExploreX",
+    vercel:
+      "https://explore-nextjs-camillehaus-camillehaus-projects.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     image: Kenziehub,
     title: "Kenziehub",
     responsive: true,
@@ -28,7 +40,7 @@ export const projects = [
     vercel: "https://kenziehub-camillehaus-camillehaus-projects.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     image: TheBooks,
     title: "The Books",
     responsive: false,

@@ -8,9 +8,22 @@ export interface IProject {
     subtitle: string;
     description: string;
     github: string;
-    vercel: string;
+    vercel: string | null;
 };
 
 export interface IProjectCard {
     project: IProject
+}
+
+export interface IProjectBE {
+    id: number;
+    image: StaticImageData;
+    title: string;
+    techs: string,
+    description: string;
+    github: string;
+};
+
+export interface IProjectCardBE {
+    backend: IProjectBE
 }

@@ -2,7 +2,7 @@ import { IoMdArrowDropright } from "react-icons/io";
 
 const button = () => {
   return (
-    <div className="flex uppercase py-2 px-12 border-2 border-primary uppercase font-bold text-primary gap-2 max-sm:text-sm max-sm:px-6">
+    <div className="flex py-2 px-12 border-2 border-primary uppercase font-bold text-primary gap-2 max-sm:text-sm max-sm:px-6">
       <p className="flex items-center">
         Download my CV <IoMdArrowDropright />
       </p>
