@@ -2,6 +2,7 @@ import TheBooks from "../../public/the-books.png";
 import Kenziehub from "../../public/Kenziehub.png";
 import ExploreX from "../../public/explore-X.png";
 import ECommerce from "../../public/e-commerce.png";
+import Planner from "../../public/planner.png";
 
 export const projects = [
   {
@@ -17,6 +18,17 @@ export const projects = [
   },
   {
     id: 1,
+    image: Planner,
+    title: "Planner",
+    responsive: false,
+    subtitle: "Planner de Viagens",
+    description:
+      "Projeto realizado durante a trilha de React da NLW. Realizado em React, Tailwind e outras bibliotecas auxiliares. Nesse planner, é possível selecionar as datas da sua viagem, convidar acompanhantes, cadastrar as atividades, adiconar links relevantes e também há confirmação de participação através de email. Esse projeto ainda terá features adiconadas. Como alteração de data depois de confirmação de trip e renderização dinâmica de links. Para testagem completa, clone o projeto e seu backend que também est;a dísponivel nesse site",
+    github: "https://github.com/CamilleHaus/Plann.er",
+    vercel: null,
+  },
+  {
+    id: 2,
     image: ExploreX,
     title: "ExploreX",
     responsive: true,
@@ -28,7 +40,7 @@ export const projects = [
       "https://explore-nextjs-camillehaus-camillehaus-projects.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     image: Kenziehub,
     title: "Kenziehub",
     responsive: true,
@@ -40,7 +52,7 @@ export const projects = [
     vercel: "https://kenziehub-camillehaus-camillehaus-projects.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     image: TheBooks,
     title: "The Books",
     responsive: false,

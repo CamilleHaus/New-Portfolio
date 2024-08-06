@@ -40,10 +40,13 @@ const Projects: React.FC = () => {
   return (
     <div className="w-full bg-projects bg-cover" id="projectSection">
       <div className="w-[70%] mx-auto max-w-[1450px] flex flex-col max-sm:w-[85%] max-md:w-[85%] max-2md:w-[80%] pb-44 max-md:pb-20">
-        <h3 className="text-3xl py-4 mt-16 mb-8 font-bold uppercase text-primary border-b border-primary max-sm:text-2xl">
-          Meus projetos
+        <h3 className="text-3xl py-4 mt-16 mb-8 font-bold uppercase text-primary border-b border-primary max-sm:text-2xl flex items-center justify-between">
+          Meus projetos 
+          <p className="text-sm">Número de projetos: {projects.length}</p>
         </h3>
         <div>
+          <div>
+          </div>
           <Slider {...settings}>
             {projects.map((project) => (
               <div key={project.id} className="px-4">
@@ -69,8 +72,9 @@ const Projects: React.FC = () => {
         {/* BACKEND ABAIXO */}
 
         <div>
-          <h4 className="text-2xl py-4 mt-16 mb-8 font-bold uppercase text-primary border-b border-primary max-sm:text-2xl">
+          <h4 className="text-2xl py-4 mt-16 mb-8 font-bold uppercase text-primary border-b border-primary max-sm:text-2xl flex items-center justify-between">
             Backend
+            <p className="text-sm">Número de projetos: {backendProjects.length}</p>
           </h4>
           <div>
             <Slider {...settings}>

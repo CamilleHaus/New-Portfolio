@@ -7,7 +7,7 @@ import {
   FaAngular,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiPrisma } from "react-icons/si";
+import { SiPrisma, SiJest } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
 const Tecnologies = () => {
@@ -21,6 +21,7 @@ const Tecnologies = () => {
     { Icon: FaAngular, color: "#FFFFFF", name: "Angular" },
     { Icon: SiPrisma, color: "#FFFFFF", name: "Prisma" },
     { Icon: BiLogoPostgresql, color: "#FFFFFF", name: "Postgres" },
+    { Icon: SiJest, color: "FFFFFF", name: "Jest"}
   ];
 
   return (
